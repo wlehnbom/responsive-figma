@@ -1,0 +1,54 @@
+@import '_variables';
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-bar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    font-size: $logo-font-size;
+
+    & a {
+        text-decoration: none;
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
+
+.nav-bar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    & li {
+        list-style: none;
+        padding-left: 1.3em;
+        font-size: $link-font-size;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: $primary-color;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+}
